@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#SBATCH -A uot165 
+#SBATCH --job-name="Word Count"
+#SBATCH --output="wordcount.distr.out"
+#SBATCH --partition=compute
+## allocate 3 nodes for the Hadoop cluster: 3 datanodes, from which 1 is namenode 
+#SBATCH --nodes=3
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=5G
+#SBATCH --export=ALL 
+#SBATCH --time=60
+export HADOOP_CONF_DIR=/home/$USER/cometcluster
+module load hadoop/2.6.0
+myhadoop-configure.sh
+start-dfs.sh
+start-yarn.sh
+
+hdfs dfs -mkdir -p /user/$USER
+hdfs dfs -put <textfile>.txt /user/$USER/<textfile>.txt
+hadoop jar WordCount.jar WordCount /user/$USER/<textfile>.txt /user/$USER/output
+rm -rf output-distr
+mkdir output-distr
+hdfs dfs -get /user/$USER/output/* output-distr
+
+stop-yarn.sh
+stop-dfs.sh

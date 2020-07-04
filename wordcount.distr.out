@@ -1,0 +1,55 @@
+myHadoop: Setting MH_IPOIB_TRANSFORM='s/\([^.]*\).*$/\1.ibnet/' from myhadoop.conf
+myHadoop: Setting MH_SCRATCH_DIR=/scratch/$USER/$SLURM_JOBID from myhadoop.conf
+myHadoop: Using HADOOP_HOME=/opt/hadoop/2.6.0
+myHadoop: Using MH_SCRATCH_DIR=/scratch/kxc3244/34455645
+myHadoop: Using JAVA_HOME=/usr/java/latest
+myHadoop: Generating Hadoop configuration in directory in /home/kxc3244/cometcluster...
+myHadoop: Designating comet-17-32.ibnet as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+comet-17-32.ibnet
+comet-17-33.ibnet
+comet-17-34.ibnet
+/opt/hadoop/2.6.0/bin/hdfs: line 276: /usr/java/latest/bin/java: No such file or directory
+/opt/hadoop/2.6.0/bin/hdfs: line 276: /usr/java/latest/bin/java: No such file or directory
+Starting namenodes on []
+comet-17-32.ibnet: starting namenode, logging to /scratch/kxc3244/34455645/logs/hadoop-kxc3244-namenode-comet-17-32.sdsc.edu.out
+comet-17-32.ibnet: /opt/hadoop/2.6.0/bin/hdfs: line 276: /usr/java/latest/bin/java: No such file or directory
+comet-17-33.ibnet: starting namenode, logging to /scratch/kxc3244/34455645/logs/hadoop-kxc3244-namenode-comet-17-33.sdsc.edu.out
+comet-17-33.ibnet: /opt/hadoop/2.6.0/bin/hdfs: line 276: /usr/java/latest/bin/java: No such file or directory
+comet-17-34.ibnet: starting namenode, logging to /scratch/kxc3244/34455645/logs/hadoop-kxc3244-namenode-comet-17-34.sdsc.edu.out
+comet-17-34.ibnet: /opt/hadoop/2.6.0/bin/hdfs: line 276: /usr/java/latest/bin/java: No such file or directory
+comet-17-33.ibnet: starting datanode, logging to /scratch/kxc3244/34455645/logs/hadoop-kxc3244-datanode-comet-17-33.sdsc.edu.out
+comet-17-33.ibnet: /opt/hadoop/2.6.0/bin/hdfs: line 276: /usr/java/latest/bin/java: No such file or directory
+comet-17-32.ibnet: starting datanode, logging to /scratch/kxc3244/34455645/logs/hadoop-kxc3244-datanode-comet-17-32.sdsc.edu.out
+comet-17-32.ibnet: /opt/hadoop/2.6.0/bin/hdfs: line 276: /usr/java/latest/bin/java: No such file or directory
+comet-17-34.ibnet: starting datanode, logging to /scratch/kxc3244/34455645/logs/hadoop-kxc3244-datanode-comet-17-34.sdsc.edu.out
+comet-17-34.ibnet: /opt/hadoop/2.6.0/bin/hdfs: line 276: /usr/java/latest/bin/java: No such file or directory
+/opt/hadoop/2.6.0/bin/hdfs: line 276: /usr/java/latest/bin/java: No such file or directory
+starting yarn daemons
+starting resourcemanager, logging to /scratch/kxc3244/34455645/logs/yarn-kxc3244-resourcemanager-comet-17-32.out
+/opt/hadoop/2.6.0/bin/yarn: line 284: /usr/java/latest/bin/java: No such file or directory
+comet-17-32.ibnet: starting nodemanager, logging to /scratch/kxc3244/34455645/logs/yarn-kxc3244-nodemanager-comet-17-32.sdsc.edu.out
+comet-17-32.ibnet: /opt/hadoop/2.6.0/bin/yarn: line 284: /usr/java/latest/bin/java: No such file or directory
+comet-17-33.ibnet: starting nodemanager, logging to /scratch/kxc3244/34455645/logs/yarn-kxc3244-nodemanager-comet-17-33.sdsc.edu.out
+comet-17-33.ibnet: /opt/hadoop/2.6.0/bin/yarn: line 284: /usr/java/latest/bin/java: No such file or directory
+comet-17-34.ibnet: starting nodemanager, logging to /scratch/kxc3244/34455645/logs/yarn-kxc3244-nodemanager-comet-17-34.sdsc.edu.out
+comet-17-34.ibnet: /opt/hadoop/2.6.0/bin/yarn: line 284: /usr/java/latest/bin/java: No such file or directory
+/opt/hadoop/2.6.0/bin/hdfs: line 276: /usr/java/latest/bin/java: No such file or directory
+/var/spool/slurmd/job34455645/slurm_script: line 20: textfile: No such file or directory
+/var/spool/slurmd/job34455645/slurm_script: line 21: textfile: No such file or directory
+/opt/hadoop/2.6.0/bin/hdfs: line 276: /usr/java/latest/bin/java: No such file or directory
+stopping yarn daemons
+no resourcemanager to stop
+comet-17-33.ibnet: no nodemanager to stop
+comet-17-32.ibnet: no nodemanager to stop
+comet-17-34.ibnet: no nodemanager to stop
+no proxyserver to stop
+/opt/hadoop/2.6.0/bin/hdfs: line 276: /usr/java/latest/bin/java: No such file or directory
+Stopping namenodes on []
+comet-17-33.ibnet: no namenode to stop
+comet-17-32.ibnet: no namenode to stop
+comet-17-34.ibnet: no namenode to stop
+comet-17-33.ibnet: no datanode to stop
+comet-17-32.ibnet: no datanode to stop
+comet-17-34.ibnet: no datanode to stop
+/opt/hadoop/2.6.0/bin/hdfs: line 276: /usr/java/latest/bin/java: No such file or directory
