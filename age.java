@@ -64,7 +64,7 @@ public class WordCount {
               if (!age1.equals("INVALID")) {
       			int age2 = Integer.parseInt(age);
       			combo.set(new Text(age1) );
-      			context.write(combo, new IntWritable(age2));
+      			context.write(combo, new IntWritable(1));
               }
 
     }
